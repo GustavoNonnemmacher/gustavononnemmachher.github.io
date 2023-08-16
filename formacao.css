@@ -1,0 +1,282 @@
+body {
+  margin: 0px;
+  background: #141414;
+  color: white;
+}
+
+.header-bg {
+  background: black;
+  margin: 0px;
+}
+
+.header {
+  max-width: 1400px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+
+.header img {
+  padding: 20px 0px 25px 0px;
+}
+
+.introducao {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 250px;
+  border-bottom: 1px solid black;
+}
+
+.introducao-texto {
+  margin-top: 96px;
+  font-size: 24px;
+  color: #a3a3a3;
+}
+
+.faculdade-lista {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  list-style-type: none;
+  align-items: flex-start;
+  margin-left: -38px;
+}
+
+@media (max-width: 500px) {
+  .faculdade-lista {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .faculdade-lista {
+    gap: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .faculdade {
+    margin-bottom: -100px;
+  }
+}
+@media (max-width: 450px) {
+  .formacao-extra .curso-curso {
+    font-size: 14px;
+  }
+  .formacao-extra .curso-curso span {
+    font-size: 14px;
+  }
+  .formacao-extra #li {
+    font-size: 14px;
+  }
+  .formacao-extra #li span {
+    font-size: 14px;
+  }
+}
+.faculdade-lista .faculdade {
+  background: black;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 100px;
+  flex: 1;
+}
+
+.formacao-extra {
+  background: black;
+  margin-top: 64px;
+  border-radius: 5px;
+  margin-bottom: 64px;
+}
+
+.cursos {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 40px;
+  margin-bottom: -50px;
+}
+
+.formacao-extra li {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+#li {
+  margin-bottom: 40px;
+}
+
+#li span {
+  color: #a3a3a3;
+  font-size: 18px;
+}
+
+.footer-bg {
+  background: black;
+  color: white;
+  margin-top: 157px;
+}
+
+.footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 80px;
+  gap: 510px;
+  padding-bottom: 50px;
+  margin-top: -80px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  list-style-type: none;
+}
+
+.footer-bg p {
+  font-weight: 26px;
+  font-size: 18px;
+  color: #a3a3a3;
+  font-family: "fira sans";
+}
+
+.faculdade-tipo {
+  font-size: 0.875rem;
+  color: #a3a3a3;
+}
+
+.faculdade-curso {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+  font-family: "fira sans";
+}
+
+.faculdade-curso::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: yellow;
+  position: absolute;
+  left: 10px;
+}
+
+.introducao-texto span {
+  color: white;
+}
+
+.faculdade-instituicao {
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+.cursos-nome {
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+.curso-curso {
+  font-size: 18px;
+}
+
+.curso-curso span {
+  font-size: 18px;
+  color: #a3a3a3;
+}
+
+@media (max-width: 1400px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .faculdade-lista {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  .footer {
+    gap: 150px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1450px) {
+  body {
+    margin-left: 26px;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    margin-right: 26px;
+  }
+  .faculdade-curso {
+    font-size: 16px;
+  }
+  .introducao-texto {
+    font-size: 18px;
+    margin-bottom: -62px;
+  }
+  .curso-curso {
+    font-size: 16px;
+  }
+  .curso-curso span {
+    font-size: 16px;
+  }
+  .li {
+    font-size: 16px;
+  }
+  .li span {
+    font-size: 16px;
+  }
+  .footer p {
+    margin-left: 26px;
+  }
+  .footer-bg {
+    margin-left: -26px;
+  }
+}
+
+@media (max-width: 1075px) {
+  .conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-bg p {
+    font-size: 16px;
+    margin-left: 40px;
+    color: #a3a3a3;
+    font-family: "fira sans";
+  }
+  .flex {
+    margin-top: -100px;
+    justify-items: center;
+  }
+}
+@media (max-width: 510px) {
+  .footer-bg p {
+    font-size: 12px;
+    margin-left: 44px;
+  }
+}
